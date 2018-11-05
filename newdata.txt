@@ -1,0 +1,13 @@
+12 7
+0 Type Classification Location Sector Ticker Value
+1 Fixed GIC Canada NA NA 10422
+2 Fixed Bond Canada Corporate NA 25000
+3 Fixed Bond USA Government NA 12000
+4 Fixed Bond Canada Government XLB 2125
+5 Security Stock Canada Finance RY 5020
+6 Security ETF Canada Finance FIE 4120
+7 Security Stock Canada Consumer L 5000
+8 Security Stock USA General V 6745
+9 Security ETF Global Finance ZWH 7852
+10 Security Stock USA Consumer AAPL 1522
+11 Security Stock Canada Resources PKI 5478
