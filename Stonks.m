@@ -64,7 +64,7 @@ switch choice
                     fprintf(output,'\n');%This way, we sneak in a \n before the space, resulting in functional behaviour
                 end
                 fclose(output);
-            case 2%does not work/print properly
+            case 2
                 newentry = cell(1,nrowcol(2));
                 fprintf('Type the values for the given category\n');
                 ourcell(nrowcol(1)+1,1) = {char(num2str(nrowcol(1)+1))};
@@ -219,11 +219,14 @@ switch choice
                     sizes = size(selections);
                     options = categories(categorical(selections(:,v)));
                     fprintf('Category %d: %s\n',v,string(ourcell(1,v)));
-                    fprintf('Type ''print'' to print these selections, or choose another category\n');
+                    fprintf('Type ''print'' to print these selections ''skip'' to disregard this column, or choose another category\n');
                     fprintf('%s\n',string(options));
                     choix = input('! Enter your choice: ');
                     if string(choix) == "print"
                         break
+                    end
+                    if string(choix) == "skip"
+                        continue
                     end
                     for u = sizes(1):-1:1
                         if(string(choix) ~= string(selections(u,v)))
